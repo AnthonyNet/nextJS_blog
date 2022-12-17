@@ -1,8 +1,8 @@
 ---
 layout:  "../../layouts/BookPost.astro" 
 title: War with the Newts
-date: 2022-09-11
-urlImg: war_with_the_newts.jpg
+date: "2022-09-11"
+imgUrl: war_with_the_newts.jpg
 ---
 
 # War with the Newts 1936

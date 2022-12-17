@@ -9,11 +9,13 @@ export default function RootLayout({
     const header = (
         <header>
           <Link href="/">
-          <h1>Blog of wisdom</h1></Link>
+          <h1>Blog of wisdom</h1>
+          </Link>
             <p>Welcome, chosen ones!</p>
 
         </header>
     )
+
     const footer = (
         <footer>
             <h3>Developed by Mr. Brainy</h3>

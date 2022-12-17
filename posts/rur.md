@@ -1,8 +1,8 @@
 ---
 layout:  "../../layouts/BookPost.astro" 
 title: R.U.R.
-date: 2022-09-01
-urlImg: rur.jpg
+date: "2022-09-01"
+imgUrl: rur.jpg
 ---
 # R.U.R. 1989
 

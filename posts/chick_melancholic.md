@@ -1,8 +1,8 @@
 ---
 layout:  "../../layouts/BookPost.astro" 
 title: The Melancholic Chicken
-date: 2022-11-02
-urlImg: chick_melancholic.jpg
+date: "2022-11-02"
+imgUrl: chick_melancholic.jpg
 ---
 # The melancholic chicken 1889
 ## Josef Karel Šlejhar
