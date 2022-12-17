@@ -9,13 +9,14 @@ const getPostMetadata = (): PostMetaData[] => {
   const markdownPosts = files.filter((file) => file.endsWith(".md"));
 
   //Get gray-matter data from each file
+ 
   const posts = markdownPosts.map((fileName) => {
     const fileContents = fs.readFileSync('posts/' + fileName, 'utf8');
     const matterResult = matter(fileContents);
 
     return{
-      title: matterResult.data.tiutle,
-      data: matterResult.data.date,
+      title: matterResult.data.title,
+      date: matterResult.data.date,
       subtitle: matterResult.data.subtitle,
       slug: fileName.replace('.md', ''),
     };
@@ -26,11 +27,12 @@ const getPostMetadata = (): PostMetaData[] => {
 
 const HomePage = () => {
   const postMetadata = getPostMetadata();
-  const postPreviews = postMetadata.map((slug) => (
+  const postPreviews = postMetadata.map((post) => (
     <div>
       <Link href={`/posts/${post.slug}`}>
-        <h2>{post.slug}</h2>
+        <h2>{post.title}</h2>
       </Link>
+      <p>{post.date}</p>
     </div>
   ));
 
